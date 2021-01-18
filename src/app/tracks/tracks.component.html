@@ -1,0 +1,18 @@
+
+<!-- 
+    1. The track route displays the track name, the album cover image and allows the user ti play a preview via an HTML audio tag. 
+-->
+
+<div *ngIf="track">
+    <h1>{{track.name}}</h1>
+
+    <p>
+        <img src="{{ track.album.images[1].url }}">
+    </p>
+    <p>
+        <audio src="{{track.preview_url}}" controls></audio>
+    </p>
+    <p>
+        <a href (click)="back()"></a>
+    </p>
+</div>
