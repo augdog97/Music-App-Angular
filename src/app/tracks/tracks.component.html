@@ -4,15 +4,15 @@
 -->
 
 <div *ngIf="track">
-    <h1>{{track.name}}</h1>
+    <h1>{{ track.name }}</h1>
 
     <p>
         <img src="{{ track.album.images[1].url }}">
     </p>
+
     <p>
-        <audio src="{{track.preview_url}}" controls></audio>
+        <audio controls src="{{ track.preview_url }}"></audio>
     </p>
-    <p>
-        <a href (click)="back()"></a>
-    </p>
+
+    <p><a href (click)="back()">Back</a></p>
 </div>
