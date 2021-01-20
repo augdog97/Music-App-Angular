@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  spotifyApiKey: 'a46da8dc2c9e4279816d0ccccad79df4',
-  spotifyApiId: '6e4431c446934664b7a41c3f2eed7545'
+  spotifyApiKey: '',
+  spotifyApiId: ''
 };
 
 /*
